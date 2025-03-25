@@ -1,17 +1,15 @@
-.vs
-packages
-node_modules
-.quasar
-# User-specific files
+# VS files
+.vs/
 *.user
 
 # Build results
-bin
-obj
-node_modules
-[Bb]uild
-[Dd]ist
-[Bb]uild[Ll]ogs
-[Pp]ackages
-[Aa]rtifacts
+[Bb]in/
+[Oo]bj/
+node_modules/
+[Bb]uild/
+[Dd]ist/
+[Bb]uild[Ll]ogs/
+[Pp]ackages/
+[Aa]rtifacts/
+.qodo/
 .qodo
