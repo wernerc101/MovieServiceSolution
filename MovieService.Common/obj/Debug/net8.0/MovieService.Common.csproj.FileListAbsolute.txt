@@ -1,0 +1,13 @@
+C:\Users\wernerc\OneDrive - Derivco (Pty) Limited\Documents\GitHub\MovieServiceSolution\MovieService.Common\bin\Debug\net8.0\MovieService.Common.deps.json
+C:\Users\wernerc\OneDrive - Derivco (Pty) Limited\Documents\GitHub\MovieServiceSolution\MovieService.Common\bin\Debug\net8.0\MovieService.Common.dll
+C:\Users\wernerc\OneDrive - Derivco (Pty) Limited\Documents\GitHub\MovieServiceSolution\MovieService.Common\bin\Debug\net8.0\MovieService.Common.pdb
+C:\Users\wernerc\OneDrive - Derivco (Pty) Limited\Documents\GitHub\MovieServiceSolution\MovieService.Common\obj\Debug\net8.0\MovieService.Common.csproj.AssemblyReference.cache
+C:\Users\wernerc\OneDrive - Derivco (Pty) Limited\Documents\GitHub\MovieServiceSolution\MovieService.Common\obj\Debug\net8.0\MovieService.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wernerc\OneDrive - Derivco (Pty) Limited\Documents\GitHub\MovieServiceSolution\MovieService.Common\obj\Debug\net8.0\MovieService.Common.AssemblyInfoInputs.cache
+C:\Users\wernerc\OneDrive - Derivco (Pty) Limited\Documents\GitHub\MovieServiceSolution\MovieService.Common\obj\Debug\net8.0\MovieService.Common.AssemblyInfo.cs
+C:\Users\wernerc\OneDrive - Derivco (Pty) Limited\Documents\GitHub\MovieServiceSolution\MovieService.Common\obj\Debug\net8.0\MovieService.Common.csproj.CoreCompileInputs.cache
+C:\Users\wernerc\OneDrive - Derivco (Pty) Limited\Documents\GitHub\MovieServiceSolution\MovieService.Common\obj\Debug\net8.0\MovieService.Common.sourcelink.json
+C:\Users\wernerc\OneDrive - Derivco (Pty) Limited\Documents\GitHub\MovieServiceSolution\MovieService.Common\obj\Debug\net8.0\MovieService.Common.dll
+C:\Users\wernerc\OneDrive - Derivco (Pty) Limited\Documents\GitHub\MovieServiceSolution\MovieService.Common\obj\Debug\net8.0\refint\MovieService.Common.dll
+C:\Users\wernerc\OneDrive - Derivco (Pty) Limited\Documents\GitHub\MovieServiceSolution\MovieService.Common\obj\Debug\net8.0\MovieService.Common.pdb
+C:\Users\wernerc\OneDrive - Derivco (Pty) Limited\Documents\GitHub\MovieServiceSolution\MovieService.Common\obj\Debug\net8.0\ref\MovieService.Common.dll

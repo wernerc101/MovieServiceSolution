@@ -1,0 +1,485 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\wernerc\\OneDrive - Derivco (Pty) Limited\\Documents\\GitHub\\MovieServiceSolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1E944C25-DDB8-44BF-9D5E-B0E0B34F716D}|MovieService.Console\\MovieService.Console.csproj|c:\\users\\wernerc\\onedrive - derivco (pty) limited\\documents\\github\\movieservicesolution\\movieservice.console\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E944C25-DDB8-44BF-9D5E-B0E0B34F716D}|MovieService.Console\\MovieService.Console.csproj|solutionrelative:movieservice.console\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E944C25-DDB8-44BF-9D5E-B0E0B34F716D}|MovieService.Console\\MovieService.Console.csproj|c:\\users\\wernerc\\onedrive - derivco (pty) limited\\documents\\github\\movieservicesolution\\movieservice.console\\commands\\searchcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E944C25-DDB8-44BF-9D5E-B0E0B34F716D}|MovieService.Console\\MovieService.Console.csproj|solutionrelative:movieservice.console\\commands\\searchcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E944C25-DDB8-44BF-9D5E-B0E0B34F716D}|MovieService.Console\\MovieService.Console.csproj|c:\\users\\wernerc\\onedrive - derivco (pty) limited\\documents\\github\\movieservicesolution\\movieservice.console\\commands\\updatecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E944C25-DDB8-44BF-9D5E-B0E0B34F716D}|MovieService.Console\\MovieService.Console.csproj|solutionrelative:movieservice.console\\commands\\updatecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E944C25-DDB8-44BF-9D5E-B0E0B34F716D}|MovieService.Console\\MovieService.Console.csproj|c:\\users\\wernerc\\onedrive - derivco (pty) limited\\documents\\github\\movieservicesolution\\movieservice.console\\services\\apiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E944C25-DDB8-44BF-9D5E-B0E0B34F716D}|MovieService.Console\\MovieService.Console.csproj|solutionrelative:movieservice.console\\services\\apiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E944C25-DDB8-44BF-9D5E-B0E0B34F716D}|MovieService.Console\\MovieService.Console.csproj|c:\\users\\wernerc\\onedrive - derivco (pty) limited\\documents\\github\\movieservicesolution\\movieservice.console\\interfaces\\iapiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E944C25-DDB8-44BF-9D5E-B0E0B34F716D}|MovieService.Console\\MovieService.Console.csproj|solutionrelative:movieservice.console\\interfaces\\iapiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E944C25-DDB8-44BF-9D5E-B0E0B34F716D}|MovieService.Console\\MovieService.Console.csproj|c:\\users\\wernerc\\onedrive - derivco (pty) limited\\documents\\github\\movieservicesolution\\movieservice.console\\commands\\deletecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E944C25-DDB8-44BF-9D5E-B0E0B34F716D}|MovieService.Console\\MovieService.Console.csproj|solutionrelative:movieservice.console\\commands\\deletecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E944C25-DDB8-44BF-9D5E-B0E0B34F716D}|MovieService.Console\\MovieService.Console.csproj|c:\\users\\wernerc\\onedrive - derivco (pty) limited\\documents\\github\\movieservicesolution\\movieservice.console\\commands\\querycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E944C25-DDB8-44BF-9D5E-B0E0B34F716D}|MovieService.Console\\MovieService.Console.csproj|solutionrelative:movieservice.console\\commands\\querycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E944C25-DDB8-44BF-9D5E-B0E0B34F716D}|MovieService.Console\\MovieService.Console.csproj|c:\\users\\wernerc\\onedrive - derivco (pty) limited\\documents\\github\\movieservicesolution\\movieservice.console\\commands\\createcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E944C25-DDB8-44BF-9D5E-B0E0B34F716D}|MovieService.Console\\MovieService.Console.csproj|solutionrelative:movieservice.console\\commands\\createcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\9.0.201\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.DefaultItems.Shared.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77C1D9F-5A7B-4F9E-9FA5-EE44788BB054}|MovieService.Api\\MovieService.Api.csproj|c:\\users\\wernerc\\onedrive - derivco (pty) limited\\documents\\github\\movieservicesolution\\movieservice.api\\controllers\\cachedentriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77C1D9F-5A7B-4F9E-9FA5-EE44788BB054}|MovieService.Api\\MovieService.Api.csproj|solutionrelative:movieservice.api\\controllers\\cachedentriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77C1D9F-5A7B-4F9E-9FA5-EE44788BB054}|MovieService.Api\\MovieService.Api.csproj|c:\\users\\wernerc\\onedrive - derivco (pty) limited\\documents\\github\\movieservicesolution\\movieservice.api\\dto\\cachedentrydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77C1D9F-5A7B-4F9E-9FA5-EE44788BB054}|MovieService.Api\\MovieService.Api.csproj|solutionrelative:movieservice.api\\dto\\cachedentrydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77C1D9F-5A7B-4F9E-9FA5-EE44788BB054}|MovieService.Api\\MovieService.Api.csproj|c:\\users\\wernerc\\onedrive - derivco (pty) limited\\documents\\github\\movieservicesolution\\movieservice.api\\models\\cachedentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E77C1D9F-5A7B-4F9E-9FA5-EE44788BB054}|MovieService.Api\\MovieService.Api.csproj|solutionrelative:movieservice.api\\models\\cachedentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E944C25-DDB8-44BF-9D5E-B0E0B34F716D}|MovieService.Console\\MovieService.Console.csproj|c:\\users\\wernerc\\onedrive - derivco (pty) limited\\documents\\github\\movieservicesolution\\movieservice.console\\movieservice.console.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1E944C25-DDB8-44BF-9D5E-B0E0B34F716D}|MovieService.Console\\MovieService.Console.csproj|solutionrelative:movieservice.console\\movieservice.console.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77C1D9F-5A7B-4F9E-9FA5-EE44788BB054}|MovieService.Api\\MovieService.Api.csproj|c:\\users\\wernerc\\onedrive - derivco (pty) limited\\documents\\github\\movieservicesolution\\movieservice.api\\movieservice.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E77C1D9F-5A7B-4F9E-9FA5-EE44788BB054}|MovieService.Api\\MovieService.Api.csproj|solutionrelative:movieservice.api\\movieservice.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F95F39C-360B-4706-AC95-3941C72AC024}|MovieService.Common\\MovieService.Common.csproj|c:\\users\\wernerc\\onedrive - derivco (pty) limited\\documents\\github\\movieservicesolution\\movieservice.common\\movieservice.common.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2F95F39C-360B-4706-AC95-3941C72AC024}|MovieService.Common\\MovieService.Common.csproj|solutionrelative:movieservice.common\\movieservice.common.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97AA81AF-3F00-45AD-A301-3B92E6966597}|MovieService.Tests\\MovieService.Tests.csproj|c:\\users\\wernerc\\onedrive - derivco (pty) limited\\documents\\github\\movieservicesolution\\movieservice.tests\\movieservice.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{97AA81AF-3F00-45AD-A301-3B92E6966597}|MovieService.Tests\\MovieService.Tests.csproj|solutionrelative:movieservice.tests\\movieservice.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97AA81AF-3F00-45AD-A301-3B92E6966597}|MovieService.Tests\\MovieService.Tests.csproj|c:\\users\\wernerc\\onedrive - derivco (pty) limited\\documents\\github\\movieservicesolution\\movieservice.tests\\movieservice.tests.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{97AA81AF-3F00-45AD-A301-3B92E6966597}|MovieService.Tests\\MovieService.Tests.csproj|solutionrelative:movieservice.tests\\movieservice.tests.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E944C25-DDB8-44BF-9D5E-B0E0B34F716D}|MovieService.Console\\MovieService.Console.csproj|c:\\users\\wernerc\\onedrive - derivco (pty) limited\\documents\\github\\movieservicesolution\\movieservice.console\\movieservice.console.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{1E944C25-DDB8-44BF-9D5E-B0E0B34F716D}|MovieService.Console\\MovieService.Console.csproj|solutionrelative:movieservice.console\\movieservice.console.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F95F39C-360B-4706-AC95-3941C72AC024}|MovieService.Common\\MovieService.Common.csproj|c:\\users\\wernerc\\onedrive - derivco (pty) limited\\documents\\github\\movieservicesolution\\movieservice.common\\movieservice.common.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{2F95F39C-360B-4706-AC95-3941C72AC024}|MovieService.Common\\MovieService.Common.csproj|solutionrelative:movieservice.common\\movieservice.common.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E77C1D9F-5A7B-4F9E-9FA5-EE44788BB054}|MovieService.Api\\MovieService.Api.csproj|c:\\users\\wernerc\\onedrive - derivco (pty) limited\\documents\\github\\movieservicesolution\\movieservice.api\\movieservice.api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{E77C1D9F-5A7B-4F9E-9FA5-EE44788BB054}|MovieService.Api\\MovieService.Api.csproj|solutionrelative:movieservice.api\\movieservice.api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97AA81AF-3F00-45AD-A301-3B92E6966597}|MovieService.Tests\\MovieService.Tests.csproj|c:\\users\\wernerc\\onedrive - derivco (pty) limited\\documents\\github\\movieservicesolution\\movieservice.tests\\console\\createcommandtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97AA81AF-3F00-45AD-A301-3B92E6966597}|MovieService.Tests\\MovieService.Tests.csproj|solutionrelative:movieservice.tests\\console\\createcommandtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97AA81AF-3F00-45AD-A301-3B92E6966597}|MovieService.Tests\\MovieService.Tests.csproj|c:\\users\\wernerc\\onedrive - derivco (pty) limited\\documents\\github\\movieservicesolution\\movieservice.tests\\services\\omdbapiservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97AA81AF-3F00-45AD-A301-3B92E6966597}|MovieService.Tests\\MovieService.Tests.csproj|solutionrelative:movieservice.tests\\services\\omdbapiservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97AA81AF-3F00-45AD-A301-3B92E6966597}|MovieService.Tests\\MovieService.Tests.csproj|c:\\users\\wernerc\\onedrive - derivco (pty) limited\\documents\\github\\movieservicesolution\\movieservice.tests\\repositories\\mysqlrepositorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97AA81AF-3F00-45AD-A301-3B92E6966597}|MovieService.Tests\\MovieService.Tests.csproj|solutionrelative:movieservice.tests\\repositories\\mysqlrepositorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97AA81AF-3F00-45AD-A301-3B92E6966597}|MovieService.Tests\\MovieService.Tests.csproj|c:\\users\\wernerc\\onedrive - derivco (pty) limited\\documents\\github\\movieservicesolution\\movieservice.tests\\controllers\\moviescontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97AA81AF-3F00-45AD-A301-3B92E6966597}|MovieService.Tests\\MovieService.Tests.csproj|solutionrelative:movieservice.tests\\controllers\\moviescontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97AA81AF-3F00-45AD-A301-3B92E6966597}|MovieService.Tests\\MovieService.Tests.csproj|c:\\users\\wernerc\\onedrive - derivco (pty) limited\\documents\\github\\movieservicesolution\\movieservice.tests\\controllers\\cachedentriescontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97AA81AF-3F00-45AD-A301-3B92E6966597}|MovieService.Tests\\MovieService.Tests.csproj|solutionrelative:movieservice.tests\\controllers\\cachedentriescontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97AA81AF-3F00-45AD-A301-3B92E6966597}|MovieService.Tests\\MovieService.Tests.csproj|c:\\users\\wernerc\\onedrive - derivco (pty) limited\\documents\\github\\movieservicesolution\\movieservice.tests\\console\\searchcommandtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97AA81AF-3F00-45AD-A301-3B92E6966597}|MovieService.Tests\\MovieService.Tests.csproj|solutionrelative:movieservice.tests\\console\\searchcommandtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 1687,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IApiClient.cs",
+              "DocumentMoniker": "C:\\Users\\wernerc\\OneDrive - Derivco (Pty) Limited\\Documents\\GitHub\\MovieServiceSolution\\MovieService.Console\\Interfaces\\IApiClient.cs",
+              "RelativeDocumentMoniker": "MovieService.Console\\Interfaces\\IApiClient.cs",
+              "ToolTip": "C:\\Users\\wernerc\\OneDrive - Derivco (Pty) Limited\\Documents\\GitHub\\MovieServiceSolution\\MovieService.Console\\Interfaces\\IApiClient.cs",
+              "RelativeToolTip": "MovieService.Console\\Interfaces\\IApiClient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T15:36:13.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MovieService.Console.csproj",
+              "DocumentMoniker": "C:\\Users\\wernerc\\OneDrive - Derivco (Pty) Limited\\Documents\\GitHub\\MovieServiceSolution\\MovieService.Console\\MovieService.Console.csproj",
+              "RelativeDocumentMoniker": "MovieService.Console\\MovieService.Console.csproj",
+              "ToolTip": "C:\\Users\\wernerc\\OneDrive - Derivco (Pty) Limited\\Documents\\GitHub\\MovieServiceSolution\\MovieService.Console\\MovieService.Console.csproj",
+              "RelativeToolTip": "MovieService.Console\\MovieService.Console.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-24T15:01:33.783Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MovieService.Api.csproj",
+              "DocumentMoniker": "C:\\Users\\wernerc\\OneDrive - Derivco (Pty) Limited\\Documents\\GitHub\\MovieServiceSolution\\MovieService.Api\\MovieService.Api.csproj",
+              "RelativeDocumentMoniker": "MovieService.Api\\MovieService.Api.csproj",
+              "ToolTip": "C:\\Users\\wernerc\\OneDrive - Derivco (Pty) Limited\\Documents\\GitHub\\MovieServiceSolution\\MovieService.Api\\MovieService.Api.csproj",
+              "RelativeToolTip": "MovieService.Api\\MovieService.Api.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-24T13:00:18.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MovieService.Common.csproj",
+              "DocumentMoniker": "C:\\Users\\wernerc\\OneDrive - Derivco (Pty) Limited\\Documents\\GitHub\\MovieServiceSolution\\MovieService.Common\\MovieService.Common.csproj",
+              "RelativeDocumentMoniker": "MovieService.Common\\MovieService.Common.csproj",
+              "ToolTip": "C:\\Users\\wernerc\\OneDrive - Derivco (Pty) Limited\\Documents\\GitHub\\MovieServiceSolution\\MovieService.Common\\MovieService.Common.csproj",
+              "RelativeToolTip": "MovieService.Common\\MovieService.Common.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-24T13:00:10.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MovieService.Tests.csproj",
+              "DocumentMoniker": "C:\\Users\\wernerc\\OneDrive - Derivco (Pty) Limited\\Documents\\GitHub\\MovieServiceSolution\\MovieService.Tests\\MovieService.Tests.csproj",
+              "RelativeDocumentMoniker": "MovieService.Tests\\MovieService.Tests.csproj",
+              "ToolTip": "C:\\Users\\wernerc\\OneDrive - Derivco (Pty) Limited\\Documents\\GitHub\\MovieServiceSolution\\MovieService.Tests\\MovieService.Tests.csproj",
+              "RelativeToolTip": "MovieService.Tests\\MovieService.Tests.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAQwAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-24T12:57:18.399Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "OmdbApiServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\wernerc\\OneDrive - Derivco (Pty) Limited\\Documents\\GitHub\\MovieServiceSolution\\MovieService.Tests\\Services\\OmdbApiServiceTests.cs",
+              "RelativeDocumentMoniker": "MovieService.Tests\\Services\\OmdbApiServiceTests.cs",
+              "ToolTip": "C:\\Users\\wernerc\\OneDrive - Derivco (Pty) Limited\\Documents\\GitHub\\MovieServiceSolution\\MovieService.Tests\\Services\\OmdbApiServiceTests.cs",
+              "RelativeToolTip": "MovieService.Tests\\Services\\OmdbApiServiceTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T12:55:11.533Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "MySqlRepositoryTests.cs",
+              "DocumentMoniker": "C:\\Users\\wernerc\\OneDrive - Derivco (Pty) Limited\\Documents\\GitHub\\MovieServiceSolution\\MovieService.Tests\\Repositories\\MySqlRepositoryTests.cs",
+              "RelativeDocumentMoniker": "MovieService.Tests\\Repositories\\MySqlRepositoryTests.cs",
+              "ToolTip": "C:\\Users\\wernerc\\OneDrive - Derivco (Pty) Limited\\Documents\\GitHub\\MovieServiceSolution\\MovieService.Tests\\Repositories\\MySqlRepositoryTests.cs",
+              "RelativeToolTip": "MovieService.Tests\\Repositories\\MySqlRepositoryTests.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAmwHoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T12:54:48.172Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CreateCommandTests.cs",
+              "DocumentMoniker": "C:\\Users\\wernerc\\OneDrive - Derivco (Pty) Limited\\Documents\\GitHub\\MovieServiceSolution\\MovieService.Tests\\Console\\CreateCommandTests.cs",
+              "RelativeDocumentMoniker": "MovieService.Tests\\Console\\CreateCommandTests.cs",
+              "ToolTip": "C:\\Users\\wernerc\\OneDrive - Derivco (Pty) Limited\\Documents\\GitHub\\MovieServiceSolution\\MovieService.Tests\\Console\\CreateCommandTests.cs",
+              "RelativeToolTip": "MovieService.Tests\\Console\\CreateCommandTests.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAA5wCcAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T12:40:34.179Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "MoviesControllerTests.cs",
+              "DocumentMoniker": "C:\\Users\\wernerc\\OneDrive - Derivco (Pty) Limited\\Documents\\GitHub\\MovieServiceSolution\\MovieService.Tests\\Controllers\\MoviesControllerTests.cs",
+              "RelativeDocumentMoniker": "MovieService.Tests\\Controllers\\MoviesControllerTests.cs",
+              "ToolTip": "C:\\Users\\wernerc\\OneDrive - Derivco (Pty) Limited\\Documents\\GitHub\\MovieServiceSolution\\MovieService.Tests\\Controllers\\MoviesControllerTests.cs",
+              "RelativeToolTip": "MovieService.Tests\\Controllers\\MoviesControllerTests.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAmwEgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T12:53:38.161Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "CachedEntriesControllerTests.cs",
+              "DocumentMoniker": "C:\\Users\\wernerc\\OneDrive - Derivco (Pty) Limited\\Documents\\GitHub\\MovieServiceSolution\\MovieService.Tests\\Controllers\\CachedEntriesControllerTests.cs",
+              "RelativeDocumentMoniker": "MovieService.Tests\\Controllers\\CachedEntriesControllerTests.cs",
+              "ToolTip": "C:\\Users\\wernerc\\OneDrive - Derivco (Pty) Limited\\Documents\\GitHub\\MovieServiceSolution\\MovieService.Tests\\Controllers\\CachedEntriesControllerTests.cs",
+              "RelativeToolTip": "MovieService.Tests\\Controllers\\CachedEntriesControllerTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T12:48:04.978Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "SearchCommandTests.cs",
+              "DocumentMoniker": "C:\\Users\\wernerc\\OneDrive - Derivco (Pty) Limited\\Documents\\GitHub\\MovieServiceSolution\\MovieService.Tests\\Console\\SearchCommandTests.cs",
+              "RelativeDocumentMoniker": "MovieService.Tests\\Console\\SearchCommandTests.cs",
+              "ToolTip": "C:\\Users\\wernerc\\OneDrive - Derivco (Pty) Limited\\Documents\\GitHub\\MovieServiceSolution\\MovieService.Tests\\Console\\SearchCommandTests.cs",
+              "RelativeToolTip": "MovieService.Tests\\Console\\SearchCommandTests.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAmwEwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T12:46:40.763Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 2079,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\wernerc\\OneDrive - Derivco (Pty) Limited\\Documents\\GitHub\\MovieServiceSolution\\MovieService.Console\\Program.cs",
+              "RelativeDocumentMoniker": "MovieService.Console\\Program.cs",
+              "ToolTip": "C:\\Users\\wernerc\\OneDrive - Derivco (Pty) Limited\\Documents\\GitHub\\MovieServiceSolution\\MovieService.Console\\Program.cs",
+              "RelativeToolTip": "MovieService.Console\\Program.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAASwDMAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T16:07:23.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UpdateCommand.cs",
+              "DocumentMoniker": "C:\\Users\\wernerc\\OneDrive - Derivco (Pty) Limited\\Documents\\GitHub\\MovieServiceSolution\\MovieService.Console\\Commands\\UpdateCommand.cs",
+              "RelativeDocumentMoniker": "MovieService.Console\\Commands\\UpdateCommand.cs",
+              "ToolTip": "C:\\Users\\wernerc\\OneDrive - Derivco (Pty) Limited\\Documents\\GitHub\\MovieServiceSolution\\MovieService.Console\\Commands\\UpdateCommand.cs",
+              "RelativeToolTip": "MovieService.Console\\Commands\\UpdateCommand.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAASwBkAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T15:45:22.031Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SearchCommand.cs",
+              "DocumentMoniker": "C:\\Users\\wernerc\\OneDrive - Derivco (Pty) Limited\\Documents\\GitHub\\MovieServiceSolution\\MovieService.Console\\Commands\\SearchCommand.cs",
+              "RelativeDocumentMoniker": "MovieService.Console\\Commands\\SearchCommand.cs",
+              "ToolTip": "C:\\Users\\wernerc\\OneDrive - Derivco (Pty) Limited\\Documents\\GitHub\\MovieServiceSolution\\MovieService.Console\\Commands\\SearchCommand.cs",
+              "RelativeToolTip": "MovieService.Console\\Commands\\SearchCommand.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAjwBMAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T15:43:59.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DeleteCommand.cs",
+              "DocumentMoniker": "C:\\Users\\wernerc\\OneDrive - Derivco (Pty) Limited\\Documents\\GitHub\\MovieServiceSolution\\MovieService.Console\\Commands\\DeleteCommand.cs",
+              "RelativeDocumentMoniker": "MovieService.Console\\Commands\\DeleteCommand.cs",
+              "ToolTip": "C:\\Users\\wernerc\\OneDrive - Derivco (Pty) Limited\\Documents\\GitHub\\MovieServiceSolution\\MovieService.Console\\Commands\\DeleteCommand.cs",
+              "RelativeToolTip": "MovieService.Console\\Commands\\DeleteCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T15:40:34.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApiClient.cs",
+              "DocumentMoniker": "C:\\Users\\wernerc\\OneDrive - Derivco (Pty) Limited\\Documents\\GitHub\\MovieServiceSolution\\MovieService.Console\\Services\\ApiClient.cs",
+              "RelativeDocumentMoniker": "MovieService.Console\\Services\\ApiClient.cs",
+              "ToolTip": "C:\\Users\\wernerc\\OneDrive - Derivco (Pty) Limited\\Documents\\GitHub\\MovieServiceSolution\\MovieService.Console\\Services\\ApiClient.cs",
+              "RelativeToolTip": "MovieService.Console\\Services\\ApiClient.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAiwC0AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T15:36:32.7Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{5a4e9529-b6a0-46b5-be4f-0f0b239bc0eb}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "QueryCommand.cs",
+              "DocumentMoniker": "C:\\Users\\wernerc\\OneDrive - Derivco (Pty) Limited\\Documents\\GitHub\\MovieServiceSolution\\MovieService.Console\\Commands\\QueryCommand.cs",
+              "RelativeDocumentMoniker": "MovieService.Console\\Commands\\QueryCommand.cs",
+              "ToolTip": "C:\\Users\\wernerc\\OneDrive - Derivco (Pty) Limited\\Documents\\GitHub\\MovieServiceSolution\\MovieService.Console\\Commands\\QueryCommand.cs",
+              "RelativeToolTip": "MovieService.Console\\Commands\\QueryCommand.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAADgvxEAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T15:41:56.063Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CachedEntriesController.cs",
+              "DocumentMoniker": "C:\\Users\\wernerc\\OneDrive - Derivco (Pty) Limited\\Documents\\GitHub\\MovieServiceSolution\\MovieService.Api\\Controllers\\CachedEntriesController.cs",
+              "RelativeDocumentMoniker": "MovieService.Api\\Controllers\\CachedEntriesController.cs",
+              "ToolTip": "C:\\Users\\wernerc\\OneDrive - Derivco (Pty) Limited\\Documents\\GitHub\\MovieServiceSolution\\MovieService.Api\\Controllers\\CachedEntriesController.cs",
+              "RelativeToolTip": "MovieService.Api\\Controllers\\CachedEntriesController.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAcwEkAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T15:01:48.313Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Microsoft.NET.Sdk.DefaultItems.Shared.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.201\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.DefaultItems.Shared.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.201\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.DefaultItems.Shared.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\9.0.201\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.DefaultItems.Shared.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.201\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.DefaultItems.Shared.targets",
+              "ViewState": "AgIAAKwAAAAAAAAAAAAlwL0AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-03-24T15:27:17.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CreateCommand.cs",
+              "DocumentMoniker": "C:\\Users\\wernerc\\OneDrive - Derivco (Pty) Limited\\Documents\\GitHub\\MovieServiceSolution\\MovieService.Console\\Commands\\CreateCommand.cs",
+              "RelativeDocumentMoniker": "MovieService.Console\\Commands\\CreateCommand.cs",
+              "ToolTip": "C:\\Users\\wernerc\\OneDrive - Derivco (Pty) Limited\\Documents\\GitHub\\MovieServiceSolution\\MovieService.Console\\Commands\\CreateCommand.cs",
+              "RelativeToolTip": "MovieService.Console\\Commands\\CreateCommand.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAIAxwBAAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T15:00:58.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CachedEntryDto.cs",
+              "DocumentMoniker": "C:\\Users\\wernerc\\OneDrive - Derivco (Pty) Limited\\Documents\\GitHub\\MovieServiceSolution\\MovieService.Api\\DTO\\CachedEntryDto.cs",
+              "RelativeDocumentMoniker": "MovieService.Api\\DTO\\CachedEntryDto.cs",
+              "ToolTip": "C:\\Users\\wernerc\\OneDrive - Derivco (Pty) Limited\\Documents\\GitHub\\MovieServiceSolution\\MovieService.Api\\DTO\\CachedEntryDto.cs",
+              "RelativeToolTip": "MovieService.Api\\DTO\\CachedEntryDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T15:34:22.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CachedEntry.cs",
+              "DocumentMoniker": "C:\\Users\\wernerc\\OneDrive - Derivco (Pty) Limited\\Documents\\GitHub\\MovieServiceSolution\\MovieService.Api\\Models\\CachedEntry.cs",
+              "RelativeDocumentMoniker": "MovieService.Api\\Models\\CachedEntry.cs",
+              "ToolTip": "C:\\Users\\wernerc\\OneDrive - Derivco (Pty) Limited\\Documents\\GitHub\\MovieServiceSolution\\MovieService.Api\\Models\\CachedEntry.cs",
+              "RelativeToolTip": "MovieService.Api\\Models\\CachedEntry.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T15:30:19.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{ca8cc5c7-0231-406a-95cd-aa5ed6ac0190}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "MovieService.Tests",
+              "DocumentMoniker": "C:\\Users\\wernerc\\OneDrive - Derivco (Pty) Limited\\Documents\\GitHub\\MovieServiceSolution\\MovieService.Tests\\MovieService.Tests.csproj",
+              "RelativeDocumentMoniker": "MovieService.Tests\\MovieService.Tests.csproj",
+              "ToolTip": "C:\\Users\\wernerc\\OneDrive - Derivco (Pty) Limited\\Documents\\GitHub\\MovieServiceSolution\\MovieService.Tests\\MovieService.Tests.csproj",
+              "RelativeToolTip": "MovieService.Tests\\MovieService.Tests.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-24T13:37:53.197Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "MovieService.Console",
+              "DocumentMoniker": "C:\\Users\\wernerc\\OneDrive - Derivco (Pty) Limited\\Documents\\GitHub\\MovieServiceSolution\\MovieService.Console\\MovieService.Console.csproj",
+              "RelativeDocumentMoniker": "MovieService.Console\\MovieService.Console.csproj",
+              "ToolTip": "C:\\Users\\wernerc\\OneDrive - Derivco (Pty) Limited\\Documents\\GitHub\\MovieServiceSolution\\MovieService.Console\\MovieService.Console.csproj",
+              "RelativeToolTip": "MovieService.Console\\MovieService.Console.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-24T13:37:44.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "MovieService.Common",
+              "DocumentMoniker": "C:\\Users\\wernerc\\OneDrive - Derivco (Pty) Limited\\Documents\\GitHub\\MovieServiceSolution\\MovieService.Common\\MovieService.Common.csproj",
+              "RelativeDocumentMoniker": "MovieService.Common\\MovieService.Common.csproj",
+              "ToolTip": "C:\\Users\\wernerc\\OneDrive - Derivco (Pty) Limited\\Documents\\GitHub\\MovieServiceSolution\\MovieService.Common\\MovieService.Common.csproj",
+              "RelativeToolTip": "MovieService.Common\\MovieService.Common.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-24T13:37:33.762Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "MovieService.Api",
+              "DocumentMoniker": "C:\\Users\\wernerc\\OneDrive - Derivco (Pty) Limited\\Documents\\GitHub\\MovieServiceSolution\\MovieService.Api\\MovieService.Api.csproj",
+              "RelativeDocumentMoniker": "MovieService.Api\\MovieService.Api.csproj",
+              "ToolTip": "C:\\Users\\wernerc\\OneDrive - Derivco (Pty) Limited\\Documents\\GitHub\\MovieServiceSolution\\MovieService.Api\\MovieService.Api.csproj",
+              "RelativeToolTip": "MovieService.Api\\MovieService.Api.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-24T13:37:11.147Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

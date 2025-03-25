@@ -1,0 +1,8 @@
+C:\Users\wernerc\OneDrive - Derivco (Pty) Limited\Documents\GitHub\MovieServiceSolution\MovieService.Api\obj\Debug\net8.0\MovieService.Api.csproj.AssemblyReference.cache
+C:\Users\wernerc\OneDrive - Derivco (Pty) Limited\Documents\GitHub\MovieServiceSolution\MovieService.Api\obj\Debug\net8.0\MovieService.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wernerc\OneDrive - Derivco (Pty) Limited\Documents\GitHub\MovieServiceSolution\MovieService.Api\obj\Debug\net8.0\MovieService.Api.AssemblyInfoInputs.cache
+C:\Users\wernerc\OneDrive - Derivco (Pty) Limited\Documents\GitHub\MovieServiceSolution\MovieService.Api\obj\Debug\net8.0\MovieService.Api.AssemblyInfo.cs
+C:\Users\wernerc\OneDrive - Derivco (Pty) Limited\Documents\GitHub\MovieServiceSolution\MovieService.Api\obj\Debug\net8.0\MovieService.Api.csproj.CoreCompileInputs.cache
+C:\Users\wernerc\OneDrive - Derivco (Pty) Limited\Documents\GitHub\MovieServiceSolution\MovieService.Api\obj\Debug\net8.0\MovieService.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\wernerc\OneDrive - Derivco (Pty) Limited\Documents\GitHub\MovieServiceSolution\MovieService.Api\obj\Debug\net8.0\MovieService.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\wernerc\OneDrive - Derivco (Pty) Limited\Documents\GitHub\MovieServiceSolution\MovieService.Api\obj\Debug\net8.0\MovieService.Api.sourcelink.json
