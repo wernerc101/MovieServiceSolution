@@ -1,6 +1,8 @@
 using System;
 using System.Threading.Tasks;
 using MovieService.Console.Commands;
+using MovieService.Console.Interfaces;
+using MovieService.Console.Services;
 using SimpleInjector;
 
 namespace MovieService.Console
@@ -20,18 +22,18 @@ namespace MovieService.Console
 
             container.Verify();
 
-            Console.WriteLine("Welcome to the Movie Service Console!");
-            Console.WriteLine("Please choose an option:");
-            Console.WriteLine("1. Search Cached Entries");
-            Console.WriteLine("2. Create Cached Entry");
-            Console.WriteLine("3. Query Cached Entries");
-            Console.WriteLine("4. Update Cached Entry");
-            Console.WriteLine("5. Delete Cached Entry");
-            Console.WriteLine("0. Exit");
+            System.Console.WriteLine("Welcome to the Movie Service Console!");
+            System.Console.WriteLine("Please choose an option:");
+            System.Console.WriteLine("1. Search Cached Entries");
+            System.Console.WriteLine("2. Create Cached Entry");
+            System.Console.WriteLine("3. Query Cached Entries");
+            System.Console.WriteLine("4. Update Cached Entry");
+            System.Console.WriteLine("5. Delete Cached Entry");
+            System.Console.WriteLine("0. Exit");
 
             while (true)
             {
-                var choice = Console.ReadLine();
+                var choice = System.Console.ReadLine();
                 switch (choice)
                 {
                     case "1":
@@ -52,7 +54,7 @@ namespace MovieService.Console
                     case "0":
                         return;
                     default:
-                        Console.WriteLine("Invalid option. Please try again.");
+                        System.Console.WriteLine("Invalid option. Please try again.");
                         break;
                 }
             }

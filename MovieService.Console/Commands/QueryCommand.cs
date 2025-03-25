@@ -19,15 +19,15 @@ namespace MovieService.Console.Commands
         {
             try
             {
-                IEnumerable<CachedEntryDto> cachedEntries = await _apiClient.GetCachedEntriesAsync();
+                IEnumerable<CachedEntryDto> cachedEntries = await _apiClient.SearchCachedEntriesAsync();
                 foreach (var entry in cachedEntries)
                 {
-                    Console.WriteLine($"ID: {entry.Id}, Title: {entry.Title}, Year: {entry.Year}");
+                    System.Console.WriteLine($"ID: {entry.Id}, Title: {entry.Title}, Year: {entry.Year}");
                 }
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"An error occurred while retrieving cached entries: {ex.Message}");
+                System.Console.WriteLine($"An error occurred while retrieving cached entries: {ex.Message}");
             }
         }
     }

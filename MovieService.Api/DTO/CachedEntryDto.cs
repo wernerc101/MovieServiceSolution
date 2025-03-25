@@ -1,3 +1,5 @@
+using System;
+
 namespace MovieService.Api.DTO
 {
     public class CachedEntryDto
@@ -10,6 +12,7 @@ namespace MovieService.Api.DTO
         public string Actors { get; set; }
         public string Plot { get; set; }
         public string Poster { get; set; }
+        public string ImdbID { get; set; }
         public DateTime CachedAt { get; set; }
     }
 }

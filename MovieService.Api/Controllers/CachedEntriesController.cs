@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.OData.Formatter;
 using Microsoft.AspNetCore.OData.Query;
 using Microsoft.AspNetCore.OData.Routing.Controllers;
 using MovieService.Api.DTO;
 using MovieService.Api.Interfaces;
-using MovieService.Api.Models;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -25,7 +25,7 @@ namespace MovieService.Api.Controllers
         [EnableQuery]
         public IActionResult Get()
         {
-            var cachedEntries = _repository.GetAll();
+            var cachedEntries = _repository.GetAllAsync();
             return Ok(cachedEntries);
         }
 
@@ -52,7 +52,7 @@ namespace MovieService.Api.Controllers
             {
                 Title = cachedEntryDto.Title,
                 Year = cachedEntryDto.Year,
-                ImdbId = cachedEntryDto.ImdbId,
+                ImdbID = cachedEntryDto.ImdbID,
                 // Map other properties as necessary
             };
 
@@ -76,7 +76,7 @@ namespace MovieService.Api.Controllers
 
             cachedEntry.Title = cachedEntryDto.Title;
             cachedEntry.Year = cachedEntryDto.Year;
-            cachedEntry.ImdbId = cachedEntryDto.ImdbId;
+            cachedEntry.ImdbID = cachedEntryDto.ImdbID;
             // Update other properties as necessary
 
             await _repository.UpdateAsync(cachedEntry);

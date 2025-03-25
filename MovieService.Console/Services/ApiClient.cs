@@ -4,6 +4,7 @@ using System.Net.Http.Json;
 using System.Threading.Tasks;
 using MovieService.Console.Interfaces;
 using MovieService.Common.Models;
+using System.Collections.Generic;
 
 namespace MovieService.Console.Services
 {
@@ -23,10 +24,10 @@ namespace MovieService.Console.Services
             return await response.Content.ReadFromJsonAsync<CachedEntryDto>();
         }
 
-        public async Task DeleteCachedEntryAsync(int id)
+        public async Task<bool> DeleteCachedEntryAsync(int id)
         {
             var response = await _httpClient.DeleteAsync($"api/cachedentries/{id}");
-            response.EnsureSuccessStatusCode();
+            return response.EnsureSuccessStatusCode().IsSuccessStatusCode;
         }
 
         public async Task<CachedEntryDto> GetCachedEntryAsync(int id)
@@ -39,14 +40,14 @@ namespace MovieService.Console.Services
             return await _httpClient.GetFromJsonAsync<IEnumerable<CachedEntryDto>>("api/cachedentries");
         }
 
-        public async Task<CachedEntryDto> UpdateCachedEntryAsync(CachedEntryDto entry)
+        public async Task<(CachedEntryDto,bool)> UpdateCachedEntryAsync(CachedEntryDto entry)
         {
             var response = await _httpClient.PutAsJsonAsync($"api/cachedentries/{entry.Id}", entry);
-            response.EnsureSuccessStatusCode();
-            return await response.Content.ReadFromJsonAsync<CachedEntryDto>();
+            //response.EnsureSuccessStatusCode().IsSuccessStatusCode;
+            return (await response.Content.ReadFromJsonAsync<CachedEntryDto>(), response.EnsureSuccessStatusCode().IsSuccessStatusCode);
         }
 
-        public async Task<IEnumerable<CachedEntryDto>> SearchCachedEntriesAsync(string searchTerm)
+        public async Task<IEnumerable<CachedEntryDto>> SearchCachedEntriesAsync(string searchTerm, string year, int? id)
         {
             return await _httpClient.GetFromJsonAsync<IEnumerable<CachedEntryDto>>($"api/cachedentries/search?term={searchTerm}");
         }

@@ -18,18 +18,18 @@ namespace MovieService.Console.Commands
         {
             if (id <= 0)
             {
-                Console.WriteLine("Invalid entry ID.");
+                System.Console.WriteLine("Invalid entry ID.");
                 return;
             }
 
-            var result = await _apiClient.UpdateCachedEntryAsync(id, updatedEntry);
-            if (result)
+            var result = await _apiClient.UpdateCachedEntryAsync(updatedEntry);
+            if (result.Item2)
             {
-                Console.WriteLine("Cached entry updated successfully.");
+                System.Console.WriteLine("Cached entry updated successfully.");
             }
             else
             {
-                Console.WriteLine("Failed to update cached entry.");
+                System.Console.WriteLine("Failed to update cached entry.");
             }
         }
     }

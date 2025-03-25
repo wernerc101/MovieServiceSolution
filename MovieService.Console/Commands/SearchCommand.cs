@@ -14,19 +14,19 @@ namespace MovieService.Console.Commands
             _apiClient = apiClient;
         }
 
-        public async Task ExecuteAsync(string title = null, string year = null, string id = null)
+        public async Task ExecuteAsync(string title = null, string year = null, int? id = null)
         {
             var results = await _apiClient.SearchCachedEntriesAsync(title, year, id);
             if (results != null && results.Count > 0)
             {
                 foreach (var entry in results)
                 {
-                    Console.WriteLine($"ID: {entry.Id}, Title: {entry.Title}, Year: {entry.Year}");
+                    System.Console.WriteLine($"ID: {entry.Id}, Title: {entry.Title}, Year: {entry.Year}");
                 }
             }
             else
             {
-                Console.WriteLine("No entries found.");
+                System.Console.WriteLine("No entries found.");
             }
         }
     }

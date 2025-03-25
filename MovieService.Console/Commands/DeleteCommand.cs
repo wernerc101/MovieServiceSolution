@@ -13,22 +13,16 @@ namespace MovieService.Console.Commands
             _apiClient = apiClient;
         }
 
-        public async Task ExecuteAsync(string id)
+        public async Task ExecuteAsync(int id)
         {
-            if (string.IsNullOrWhiteSpace(id))
-            {
-                Console.WriteLine("Invalid ID. Please provide a valid cached entry ID.");
-                return;
-            }
-
             var success = await _apiClient.DeleteCachedEntryAsync(id);
             if (success)
             {
-                Console.WriteLine($"Cached entry with ID {id} has been deleted successfully.");
+                System.Console.WriteLine($"Cached entry with ID {id} has been deleted successfully.");
             }
             else
             {
-                Console.WriteLine($"Failed to delete cached entry with ID {id}. It may not exist.");
+                System.Console.WriteLine($"Failed to delete cached entry with ID {id}. It may not exist.");
             }
         }
     }

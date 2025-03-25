@@ -22,7 +22,7 @@ namespace MovieService.Console.Commands
             }
 
             var result = await _apiClient.CreateCachedEntryAsync(cachedEntryDto);
-            Console.WriteLine($"Cached entry created with ID: {result.Id}");
+            System.Console.WriteLine($"Cached entry created with ID: {result.Id}");
         }
     }
 }
