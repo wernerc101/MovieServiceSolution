@@ -3,17 +3,14 @@ using Moq;
 using MovieService.Api.Controllers;
 using MovieService.Api.DTO;
 using MovieService.Api.Interfaces;
-using NUnit.Framework;
-using NUnit.Framework.Legacy;
-using System.Threading.Tasks;
 
 namespace MovieService.Tests.Controllers
 {
   [TestFixture]
   public class MoviesControllerTests
   {
-    private Mock<IMovieService> _mockMovieService;
-    private MoviesController _controller;
+    private Mock<IMovieService>? _mockMovieService;
+    private MoviesController? _controller;
 
     [SetUp]
     public void Setup()
@@ -34,12 +31,12 @@ namespace MovieService.Tests.Controllers
       var result = await _controller.GetMovie(movieId);
 
       // Assert
-      ClassicAssert.IsInstanceOf<OkObjectResult>(result.Result);
+      Assert.That(result.Result, Is.InstanceOf<OkObjectResult>());
       var okResult = (OkObjectResult)result.Result;
-      ClassicAssert.IsInstanceOf<MovieDetail>(okResult.Value);
+      Assert.That(okResult.Value, Is.InstanceOf<MovieDetail>());
       var returnValue = (MovieDetail)okResult.Value;
-      ClassicAssert.AreEqual(movieId, returnValue.ImdbID);
-      ClassicAssert.AreEqual("The Shawshank Redemption", returnValue.Title);
+      Assert.That(returnValue.ImdbID, Is.EqualTo(movieId));
+      Assert.That(returnValue.Title, Is.EqualTo("The Shawshank Redemption"));
     }
 
     [Test]
@@ -51,10 +48,10 @@ namespace MovieService.Tests.Controllers
           .ReturnsAsync((MovieDetail)null);
 
       // Act
-      var result = await _controller.GetMovie(movieId);
+      ActionResult<MovieDetail> result = await _controller.GetMovie(movieId);
 
       // Assert
-      ClassicAssert.IsInstanceOf<NotFoundResult>(result.Result);
+      Assert.That(result.Result, Is.InstanceOf<NotFoundResult>());
     }
 
     [Test]
@@ -64,10 +61,10 @@ namespace MovieService.Tests.Controllers
       var request = new MovieSearchRequest { Title = "Shawshank" };
       var expectedResponse = new MovieSearchResponse
       {
-        Search = new List<MovieData>
-                {
-                    new MovieData { Title = "The Shawshank Redemption", Year = "1994", imdbID = "tt0111161" }
-                },
+        Search =
+                [
+                    new() { Title = "The Shawshank Redemption", Year = "1994", imdbID = "tt0111161" }
+                ],
         TotalResults = 1,
         Response = true
       };
@@ -79,13 +76,16 @@ namespace MovieService.Tests.Controllers
       var result = await _controller.SearchMovies(request);
 
       // Assert
-      ClassicAssert.IsInstanceOf<OkObjectResult>(result.Result);
+      Assert.That(result.Result, Is.InstanceOf<OkObjectResult>());
       var okResult = (OkObjectResult)result.Result;
-      ClassicAssert.IsInstanceOf<MovieSearchResponse>(okResult.Value);
+      Assert.That(okResult.Value, Is.InstanceOf<MovieSearchResponse>());
       var returnValue = (MovieSearchResponse)okResult.Value;
-      ClassicAssert.AreEqual(expectedResponse.TotalResults, returnValue.TotalResults);
-      ClassicAssert.AreEqual(expectedResponse.Search.Count, returnValue.Search.Count);
-      ClassicAssert.AreEqual(expectedResponse.Search[0].imdbID, returnValue.Search[0].imdbID);
+      Assert.Multiple(() =>
+      {
+        Assert.That(returnValue.TotalResults, Is.EqualTo(expectedResponse.TotalResults));
+        Assert.That(returnValue.Search.Count, Is.EqualTo(expectedResponse.Search.Count));
+      });
+      Assert.That(returnValue.Search[0].imdbID, Is.EqualTo(expectedResponse.Search[0].imdbID));
     }
 
     [TearDown]

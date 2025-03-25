@@ -1,26 +1,19 @@
-﻿using Microsoft.Extensions.Configuration;
-using Moq;
+﻿using Moq;
 using Moq.Protected;
 using MovieService.Api.DTO;
 using MovieService.Api.Services;
-using NUnit.Framework;
 using NUnit.Framework.Legacy;
-using System;
-using System.Net;
-using System.Net.Http;
 using System.Text.Json;
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace MovieService.Tests.Services
 {
   [TestFixture]
   public class OmdbApiServiceTests
   {
-    private Mock<HttpMessageHandler> _mockHttpMessageHandler;
-    private HttpClient _httpClient;
+    private Mock<HttpMessageHandler>? _mockHttpMessageHandler;
+    private HttpClient? _httpClient;
     private string _apiKey = "test_api_key";
-    private OmdbApiService _service;
+    private OmdbApiService? _service;
 
     [SetUp]
     public void Setup()
@@ -40,10 +33,10 @@ namespace MovieService.Tests.Services
       var request = new MovieSearchRequest { Title = "Shawshank" };
       var expectedResponse = new MovieSearchResponse
       {
-        Search = new List<MovieData>
-                {
+        Search =
+                [
                     new MovieData { Title = "The Shawshank Redemption", Year = "1994", imdbID = "tt0111161" }
-                },
+                ],
         TotalResults = 1,
         Response = true
       };
@@ -67,9 +60,9 @@ namespace MovieService.Tests.Services
 
       // Assert
       ClassicAssert.NotNull(result);
-      ClassicAssert.AreEqual(expectedResponse.TotalResults, result.TotalResults);
-      ClassicAssert.AreEqual(expectedResponse.Search.Count, result.Search.Count);
-      ClassicAssert.AreEqual(expectedResponse.Search[0].imdbID, result.Search[0].imdbID);
+      Assert.That(result.TotalResults, Is.EqualTo(expectedResponse.TotalResults));
+      Assert.That(result.Search.Count, Is.EqualTo(expectedResponse.Search.Count));
+      Assert.That(result.Search[0].imdbID, Is.EqualTo(expectedResponse.Search[0].imdbID));
     }
 
     [Test]
@@ -103,10 +96,13 @@ namespace MovieService.Tests.Services
       var result = await _service.GetMovieDetailsAsync(movieId);
 
       // Assert
-      ClassicAssert.NotNull(result);
-      ClassicAssert.AreEqual(expectedResponse.ImdbID, result.ImdbID);
-      ClassicAssert.AreEqual(expectedResponse.Title, result.Title);
-      ClassicAssert.AreEqual(expectedResponse.Director, result.Director);
+      Assert.That(result, Is.Not.Null);
+      Assert.Multiple(() =>
+      {
+        Assert.That(result.ImdbID, Is.EqualTo(expectedResponse.ImdbID));
+        Assert.That(result.Title, Is.EqualTo(expectedResponse.Title));
+        Assert.That(result.Director, Is.EqualTo(expectedResponse.Director));
+      });
     }
 
     [TearDown]

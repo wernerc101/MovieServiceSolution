@@ -1,8 +1,0 @@
-C:\Users\wernerc\OneDrive - Derivco (Pty) Limited\Documents\GitHub\MovieServiceSolution\MovieService.Tests\bin\Debug\net8.0\.msCoverageSourceRootsMapping_MovieService.Tests
-C:\Users\wernerc\OneDrive - Derivco (Pty) Limited\Documents\GitHub\MovieServiceSolution\MovieService.Tests\bin\Debug\net8.0\CoverletSourceRootsMapping_MovieService.Tests
-C:\Users\wernerc\OneDrive - Derivco (Pty) Limited\Documents\GitHub\MovieServiceSolution\MovieService.Tests\obj\Debug\net8.0\MovieService.Tests.csproj.AssemblyReference.cache
-C:\Users\wernerc\OneDrive - Derivco (Pty) Limited\Documents\GitHub\MovieServiceSolution\MovieService.Tests\obj\Debug\net8.0\MovieService.Tests.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\wernerc\OneDrive - Derivco (Pty) Limited\Documents\GitHub\MovieServiceSolution\MovieService.Tests\obj\Debug\net8.0\MovieService.Tests.AssemblyInfoInputs.cache
-C:\Users\wernerc\OneDrive - Derivco (Pty) Limited\Documents\GitHub\MovieServiceSolution\MovieService.Tests\obj\Debug\net8.0\MovieService.Tests.AssemblyInfo.cs
-C:\Users\wernerc\OneDrive - Derivco (Pty) Limited\Documents\GitHub\MovieServiceSolution\MovieService.Tests\obj\Debug\net8.0\MovieService.Tests.csproj.CoreCompileInputs.cache
-C:\Users\wernerc\OneDrive - Derivco (Pty) Limited\Documents\GitHub\MovieServiceSolution\MovieService.Tests\obj\Debug\net8.0\MovieService.Tests.sourcelink.json

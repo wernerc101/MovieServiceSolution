@@ -1,6 +1,0 @@
-C:\Users\wernerc\OneDrive - Derivco (Pty) Limited\Documents\GitHub\MovieServiceSolution\MovieService.Console\obj\Debug\net6.0\MovieService.Console.csproj.AssemblyReference.cache
-C:\Users\wernerc\OneDrive - Derivco (Pty) Limited\Documents\GitHub\MovieServiceSolution\MovieService.Console\obj\Debug\net6.0\MovieService.Console.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\wernerc\OneDrive - Derivco (Pty) Limited\Documents\GitHub\MovieServiceSolution\MovieService.Console\obj\Debug\net6.0\MovieService.Console.AssemblyInfoInputs.cache
-C:\Users\wernerc\OneDrive - Derivco (Pty) Limited\Documents\GitHub\MovieServiceSolution\MovieService.Console\obj\Debug\net6.0\MovieService.Console.AssemblyInfo.cs
-C:\Users\wernerc\OneDrive - Derivco (Pty) Limited\Documents\GitHub\MovieServiceSolution\MovieService.Console\obj\Debug\net6.0\MovieService.Console.csproj.CoreCompileInputs.cache
-C:\Users\wernerc\OneDrive - Derivco (Pty) Limited\Documents\GitHub\MovieServiceSolution\MovieService.Console\obj\Debug\net6.0\MovieService.Console.sourcelink.json

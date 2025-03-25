@@ -1,16 +1,9 @@
-﻿using Google.Protobuf.WellKnownTypes;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.OData.Query;
-using Microsoft.Extensions.Caching.Memory;
+﻿using Microsoft.AspNetCore.Mvc;
 using Moq;
 using MovieService.Api.Controllers;
 using MovieService.Api.Interfaces;
 using MovieService.Common.Models;
-using NUnit.Framework;
 using NUnit.Framework.Legacy;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace MovieService.Tests.Controllers
 {
@@ -44,9 +37,9 @@ namespace MovieService.Tests.Controllers
       var result = _controller.Get();
 
       // Assert
-      ClassicAssert.IsInstanceOf<OkObjectResult>(result);
+      Assert.That(result, Is.InstanceOf<OkObjectResult>());
       var okResult = (OkObjectResult)result;
-      ClassicAssert.IsInstanceOf<IQueryable<CachedEntry>>(okResult.Value);
+      Assert.That(okResult.Value, Is.InstanceOf<IQueryable<CachedEntry>>());
       var returnValue = (IQueryable<CachedEntry>)okResult.Value;
       Assert.Equals(2, returnValue.Count());
     }
@@ -65,9 +58,9 @@ namespace MovieService.Tests.Controllers
       var result = await _controller.Get(entryId);
 
       // Assert
-      ClassicAssert.IsInstanceOf<OkObjectResult>(result);
+      Assert.That(result, Is.InstanceOf<OkObjectResult>());
       var okResult = (OkObjectResult)result;
-      ClassicAssert.IsInstanceOf<CachedEntry>(okResult.Value);
+      Assert.That(okResult.Value, Is.InstanceOf<CachedEntry>());
       var returnValue = (CachedEntry)okResult.Value;
       ClassicAssert.AreEqual(entryId, returnValue.Id);
     }
@@ -84,7 +77,7 @@ namespace MovieService.Tests.Controllers
       var result = await _controller.Get(entryId);
 
       // Assert
-      ClassicAssert.IsInstanceOf<NotFoundResult>(result);
+      Assert.That(result, Is.InstanceOf<NotFoundResult>());
     }
 
     [Test]
@@ -114,10 +107,10 @@ namespace MovieService.Tests.Controllers
       var result = await _controller.Post(entryDto);
 
       // Assert
-      ClassicAssert.IsInstanceOf<CreatedAtActionResult>(result);
+      Assert.That(result, Is.InstanceOf<CreatedAtActionResult>());
       var createdAtResult = (CreatedAtActionResult)result;
       ClassicAssert.AreEqual("Get", createdAtResult.ActionName);
-      ClassicAssert.IsInstanceOf<CachedEntry>(createdAtResult.Value);
+      Assert.That(createdAtResult.Value, Is.InstanceOf<CachedEntry>());
       var returnValue = (CachedEntry)createdAtResult.Value;
       ClassicAssert.AreEqual(1, returnValue.Id);
       ClassicAssert.AreEqual(entryDto.Title, returnValue.Title);
@@ -145,7 +138,7 @@ namespace MovieService.Tests.Controllers
       var result = await _controller.Put(entryId, entryDto);
 
       // Assert
-      ClassicAssert.IsInstanceOf<NoContentResult>(result);
+      Assert.That(result, Is.InstanceOf<NoContentResult>());
     }
 
     [Test]
@@ -166,7 +159,7 @@ namespace MovieService.Tests.Controllers
       var result = await _controller.Put(entryId, entryDto);
 
       // Assert
-      ClassicAssert.IsInstanceOf<NotFoundResult>(result);
+      Assert.That(result, Is.InstanceOf<NotFoundResult>());
     }
 
     [Test]
@@ -185,7 +178,7 @@ namespace MovieService.Tests.Controllers
       var result = await _controller.Delete(entryId);
 
       // Assert
-      ClassicAssert.IsInstanceOf<NoContentResult>(result);
+      Assert.That(result, Is.InstanceOf<NoContentResult>());
     }
 
     [Test]
@@ -200,7 +193,7 @@ namespace MovieService.Tests.Controllers
       var result = await _controller.Delete(entryId);
 
       // Assert
-      ClassicAssert.IsInstanceOf<NotFoundResult>(result);
+      Assert.That(result, Is.InstanceOf<NotFoundResult>());
     }
 
     [TearDown]

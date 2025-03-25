@@ -1,11 +1,7 @@
 ﻿using Moq;
-using MovieService.Api.DTO;
 using MovieService.Common.Models;
 using MovieService.Console.Commands;
 using MovieService.Console.Interfaces;
-using NUnit.Framework;
-using System;
-using System.Threading.Tasks;
 
 namespace MovieService.Tests.Console
 {
