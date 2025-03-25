@@ -40,11 +40,10 @@ namespace MovieService.Console.Services
             return await _httpClient.GetFromJsonAsync<IEnumerable<CachedEntryDto>>("api/cachedentries");
         }
 
-        public async Task<(CachedEntryDto,bool)> UpdateCachedEntryAsync(CachedEntryDto entry)
+        public async Task<bool> UpdateCachedEntryAsync(CachedEntryDto entry)
         {
             var response = await _httpClient.PutAsJsonAsync($"api/cachedentries/{entry.Id}", entry);
-            //response.EnsureSuccessStatusCode().IsSuccessStatusCode;
-            return (await response.Content.ReadFromJsonAsync<CachedEntryDto>(), response.EnsureSuccessStatusCode().IsSuccessStatusCode);
+            return response.EnsureSuccessStatusCode().IsSuccessStatusCode;
         }
 
         public async Task<IEnumerable<CachedEntryDto>> SearchCachedEntriesAsync(string searchTerm, string year, int? id)

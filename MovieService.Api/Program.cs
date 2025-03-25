@@ -7,15 +7,19 @@ using Microsoft.EntityFrameworkCore;
 using MovieService.Api.Interfaces;
 using MovieService.Api.Services;
 using MovieService.Api.Repositories;
+using Microsoft.Extensions.Configuration;
+using System;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllers();
-builder.Services.AddDbContext<MySqlDbContext>(options =>
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"), 
     new MySqlServerVersion(new Version(8, 0, 21)))); // Adjust version as necessary
-builder.Services.AddScoped<IRepository, MySqlRepository>();
+
+// Fix the generic interface registration
+builder.Services.AddScoped<IRepository<CachedEntry>, MySqlRepository>();
 builder.Services.AddScoped<IMovieService, OmdbApiService>();
 builder.Services.AddScoped<ICacheService, CacheService>();
 builder.Services.AddMemoryCache();

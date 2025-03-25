@@ -5,7 +5,7 @@
     <RootNamespace>MovieService.Api</RootNamespace>
     <AssemblyName>MovieService.Api</AssemblyName>
     <Nullable>enable</Nullable>
-    <EnableDefaultContentItems>false</EnableDefaultContentItems>
+    <EnableDefaultCompileItems>true</EnableDefaultCompileItems>
   </PropertyGroup>
 
   <ItemGroup>
@@ -15,15 +15,11 @@
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="6.0.2" />
     <PackageReference Include="Microsoft.AspNetCore.OData" Version="8.0.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="6.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="7.0.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\MovieService.Common\MovieService.Common.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Include="Models\**\*.cs" />
   </ItemGroup>
 
 </Project>

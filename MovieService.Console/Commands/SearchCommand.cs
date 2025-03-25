@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using System.Threading.Tasks;
 using MovieService.Console.Interfaces;
 using MovieService.Console.Services;
@@ -17,7 +18,7 @@ namespace MovieService.Console.Commands
         public async Task ExecuteAsync(string title = null, string year = null, int? id = null)
         {
             var results = await _apiClient.SearchCachedEntriesAsync(title, year, id);
-            if (results != null && results.Count > 0)
+            if (results != null && results.Any())
             {
                 foreach (var entry in results)
                 {

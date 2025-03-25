@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 public class MovieSearchResponse
 {
     public int TotalResults { get; set; }

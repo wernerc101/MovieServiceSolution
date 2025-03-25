@@ -5,8 +5,9 @@ using Microsoft.Extensions.Caching.Memory;
 using Moq;
 using MovieService.Api.Controllers;
 using MovieService.Api.Interfaces;
-using MovieService.Api.Models;
+using MovieService.Common.Models;
 using NUnit.Framework;
+using NUnit.Framework.Legacy;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -36,18 +37,18 @@ namespace MovieService.Tests.Controllers
                 new CachedEntry { Id = 2, Title = "The Godfather", Year = "1972" }
             };
 
-      _mockRepository.Setup(repo => repo.GetAll())
-          .Returns(cachedEntries.AsQueryable());
+      _mockRepository.Setup(repo => repo.GetAllAsync())
+          .Returns((Task<IEnumerable<CachedEntry>>)cachedEntries.AsQueryable());
 
       // Act
       var result = _controller.Get();
 
       // Assert
-      Assert.IsInstanceOf<OkObjectResult>(result);
+      ClassicAssert.IsInstanceOf<OkObjectResult>(result);
       var okResult = (OkObjectResult)result;
-      Assert.IsInstanceOf<IQueryable<CachedEntry>>(okResult.Value);
+      ClassicAssert.IsInstanceOf<IQueryable<CachedEntry>>(okResult.Value);
       var returnValue = (IQueryable<CachedEntry>)okResult.Value;
-      Assert.AreEqual(2, returnValue.Count());
+      Assert.Equals(2, returnValue.Count());
     }
 
     [Test]
@@ -64,11 +65,11 @@ namespace MovieService.Tests.Controllers
       var result = await _controller.Get(entryId);
 
       // Assert
-      Assert.IsInstanceOf<OkObjectResult>(result);
+      ClassicAssert.IsInstanceOf<OkObjectResult>(result);
       var okResult = (OkObjectResult)result;
-      Assert.IsInstanceOf<CachedEntry>(okResult.Value);
+      ClassicAssert.IsInstanceOf<CachedEntry>(okResult.Value);
       var returnValue = (CachedEntry)okResult.Value;
-      Assert.AreEqual(entryId, returnValue.Id);
+      ClassicAssert.AreEqual(entryId, returnValue.Id);
     }
 
     [Test]
@@ -83,18 +84,18 @@ namespace MovieService.Tests.Controllers
       var result = await _controller.Get(entryId);
 
       // Assert
-      Assert.IsInstanceOf<NotFoundResult>(result);
+      ClassicAssert.IsInstanceOf<NotFoundResult>(result);
     }
 
     [Test]
     public async Task Post_WithValidEntry_ReturnsCreatedAtAction()
     {
       // Arrange
-      var entryDto = new Api.DTO.CachedEntryDto
+      var entryDto = new CachedEntryDto
       {
         Title = "The Shawshank Redemption",
         Year = "1994",
-        ImdbId = "tt0111161"
+        ImdbID = "tt0111161"
       };
 
       var cachedEntry = new CachedEntry
@@ -113,13 +114,13 @@ namespace MovieService.Tests.Controllers
       var result = await _controller.Post(entryDto);
 
       // Assert
-      Assert.IsInstanceOf<CreatedAtActionResult>(result);
+      ClassicAssert.IsInstanceOf<CreatedAtActionResult>(result);
       var createdAtResult = (CreatedAtActionResult)result;
-      Assert.AreEqual("Get", createdAtResult.ActionName);
-      Assert.IsInstanceOf<CachedEntry>(createdAtResult.Value);
+      ClassicAssert.AreEqual("Get", createdAtResult.ActionName);
+      ClassicAssert.IsInstanceOf<CachedEntry>(createdAtResult.Value);
       var returnValue = (CachedEntry)createdAtResult.Value;
-      Assert.AreEqual(1, returnValue.Id);
-      Assert.AreEqual(entryDto.Title, returnValue.Title);
+      ClassicAssert.AreEqual(1, returnValue.Id);
+      ClassicAssert.AreEqual(entryDto.Title, returnValue.Title);
     }
 
     [Test]
@@ -127,7 +128,7 @@ namespace MovieService.Tests.Controllers
     {
       // Arrange
       int entryId = 1;
-      var entryDto = new Api.DTO.CachedEntryDto
+      var entryDto = new CachedEntryDto
       {
         Title = "Updated Title",
         Year = "1994"
@@ -144,7 +145,7 @@ namespace MovieService.Tests.Controllers
       var result = await _controller.Put(entryId, entryDto);
 
       // Assert
-      Assert.IsInstanceOf<NoContentResult>(result);
+      ClassicAssert.IsInstanceOf<NoContentResult>(result);
     }
 
     [Test]
@@ -152,7 +153,7 @@ namespace MovieService.Tests.Controllers
     {
       // Arrange
       int entryId = 999;
-      var entryDto = new Api.DTO.CachedEntryDto
+      var entryDto = new CachedEntryDto
       {
         Title = "Updated Title",
         Year = "1994"
@@ -165,7 +166,7 @@ namespace MovieService.Tests.Controllers
       var result = await _controller.Put(entryId, entryDto);
 
       // Assert
-      Assert.IsInstanceOf<NotFoundResult>(result);
+      ClassicAssert.IsInstanceOf<NotFoundResult>(result);
     }
 
     [Test]
@@ -184,7 +185,7 @@ namespace MovieService.Tests.Controllers
       var result = await _controller.Delete(entryId);
 
       // Assert
-      Assert.IsInstanceOf<NoContentResult>(result);
+      ClassicAssert.IsInstanceOf<NoContentResult>(result);
     }
 
     [Test]
@@ -199,7 +200,7 @@ namespace MovieService.Tests.Controllers
       var result = await _controller.Delete(entryId);
 
       // Assert
-      Assert.IsInstanceOf<NotFoundResult>(result);
+      ClassicAssert.IsInstanceOf<NotFoundResult>(result);
     }
 
     [TearDown]

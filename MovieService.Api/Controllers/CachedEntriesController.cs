@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.OData.Query;
 using Microsoft.AspNetCore.OData.Routing.Controllers;
 using MovieService.Api.DTO;
 using MovieService.Api.Interfaces;
+using MovieService.Common.Models;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;

@@ -1,3 +1,6 @@
+using MovieService.Common.Models;
+using System.Collections.Generic;
+
 namespace MovieService.Api.Interfaces
 {
     public interface ICacheService

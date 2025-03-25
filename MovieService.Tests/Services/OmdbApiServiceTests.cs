@@ -4,6 +4,7 @@ using Moq.Protected;
 using MovieService.Api.DTO;
 using MovieService.Api.Services;
 using NUnit.Framework;
+using NUnit.Framework.Legacy;
 using System;
 using System.Net;
 using System.Net.Http;
@@ -39,12 +40,12 @@ namespace MovieService.Tests.Services
       var request = new MovieSearchRequest { Title = "Shawshank" };
       var expectedResponse = new MovieSearchResponse
       {
-        Search = new System.Collections.Generic.List<MovieSearchResult>
+        Search = new List<MovieData>
                 {
-                    new MovieSearchResult { Title = "The Shawshank Redemption", Year = "1994", ImdbID = "tt0111161" }
+                    new MovieData { Title = "The Shawshank Redemption", Year = "1994", imdbID = "tt0111161" }
                 },
-        TotalResults = "1",
-        Response = "True"
+        TotalResults = 1,
+        Response = true
       };
 
       var jsonResponse = JsonSerializer.Serialize(expectedResponse, new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.CamelCase });
@@ -65,10 +66,10 @@ namespace MovieService.Tests.Services
       var result = await _service.SearchMoviesAsync(request);
 
       // Assert
-      Assert.NotNull(result);
-      Assert.AreEqual(expectedResponse.TotalResults, result.TotalResults);
-      Assert.AreEqual(expectedResponse.Search.Count, result.Search.Count);
-      Assert.AreEqual(expectedResponse.Search[0].ImdbID, result.Search[0].ImdbID);
+      ClassicAssert.NotNull(result);
+      ClassicAssert.AreEqual(expectedResponse.TotalResults, result.TotalResults);
+      ClassicAssert.AreEqual(expectedResponse.Search.Count, result.Search.Count);
+      ClassicAssert.AreEqual(expectedResponse.Search[0].imdbID, result.Search[0].imdbID);
     }
 
     [Test]
@@ -102,10 +103,10 @@ namespace MovieService.Tests.Services
       var result = await _service.GetMovieDetailsAsync(movieId);
 
       // Assert
-      Assert.NotNull(result);
-      Assert.AreEqual(expectedResponse.ImdbID, result.ImdbID);
-      Assert.AreEqual(expectedResponse.Title, result.Title);
-      Assert.AreEqual(expectedResponse.Director, result.Director);
+      ClassicAssert.NotNull(result);
+      ClassicAssert.AreEqual(expectedResponse.ImdbID, result.ImdbID);
+      ClassicAssert.AreEqual(expectedResponse.Title, result.Title);
+      ClassicAssert.AreEqual(expectedResponse.Director, result.Director);
     }
 
     [TearDown]

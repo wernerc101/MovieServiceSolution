@@ -23,7 +23,7 @@ namespace MovieService.Console.Commands
             }
 
             var result = await _apiClient.UpdateCachedEntryAsync(updatedEntry);
-            if (result.Item2)
+            if (result)
             {
                 System.Console.WriteLine("Cached entry updated successfully.");
             }

@@ -19,7 +19,7 @@ namespace MovieService.Api.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<MovieDetail>> GetMovie(string id)
         {
-            var movieDetail = await _movieService.GetMovieDetailAsync(id);
+            var movieDetail = await _movieService.GetMovieDetailsAsync(id);
             if (movieDetail == null)
             {
                 return NotFound();

@@ -15,11 +15,11 @@ namespace MovieService.Console.Commands
             _apiClient = apiClient;
         }
 
-        public async Task ExecuteAsync()
+        public async Task ExecuteAsync(string title, string year, int? id)
         {
             try
             {
-                IEnumerable<CachedEntryDto> cachedEntries = await _apiClient.SearchCachedEntriesAsync();
+                IEnumerable<CachedEntryDto> cachedEntries = await _apiClient.SearchCachedEntriesAsync(title, year, id);
                 foreach (var entry in cachedEntries)
                 {
                     System.Console.WriteLine($"ID: {entry.Id}, Title: {entry.Title}, Year: {entry.Year}");
